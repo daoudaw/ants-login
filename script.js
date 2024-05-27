@@ -123,7 +123,7 @@ addEventListener('load', ()=> {
                         alert_captcha.style.display = 'none';
                     } else {
                         alert_captcha.style.display = 'block';
-                    }              
+                    }               
             });
         }
 
