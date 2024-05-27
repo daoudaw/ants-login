@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+
+    <!-- <link rel="stylesheet" href="./dist/output.css" />  -->
+   <link rel="stylesheet" href="style.css" /> 
+
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- Tailwind cdn -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <title>ANTS Login</title>
+  </head>
+
+  <body>
+    <div id="login_section">
+      <h3>Me connecter avec un identifiant ANTS</h3>
+
+      <p id="credentials_login">
+        <label id="login_text" for="login">Identifiant</label>
+        <br>
+        <input type="text" name="login" id="login" placeholder="login">
+        <br>
+        <p class="alert_login"><img id="cancel" src="img/cancel.png"> Ce champ ne doit pas être vide</p>
+
+        <a id="forgot_id" href="#">Identifiant oublié ?</a>
+      </p>
+
+      <p id="credentials_pwd">
+        <label id="pwd_text" for="mdp">Mot de passe</label>
+        <input type="checkbox" id="show_pwd"><label id="text_pwd" for="show_pwd">Afficher</label>
+        <br>
+        <input type="password" name="mdp" id="mdp" placeholder="pwd">
+        <br>
+        <p class="alert_pwd"><img id="cancel" src="img/cancel.png"> Ce champ ne doit pas être vide</p>
+
+        <a id="forgot_pwd" href="#">Mot de passe oublié ?</a>
+      </p>
+
+      <div id="img_verification">
+        <p id="img_text">
+          Cliquez ou séléctionnez l'image : <span class="img_text_to_display"></span>
+        </p>
+
+        <div id="imgs_to_display">
+          <button><img id="img1"></button>
+          <button><img id="img2"></button>
+          <button><img id="img3"></button>
+          <button><img id="img4"></button>
+          <button><img id="img5"></button>
+        </div>
+      </div>
+    
+      <p class="alert_captcha"><img id="cancel" src="img/cancel.png"> Le Captcha est invalide</p>
+
+      <p>
+        <button id="connect">Me connecter</button>
+      </p>
+      
+
+    </div>
+    
+    
+   
+  
+    <script src="script.js"></script>
+  </body>
+</html>
+

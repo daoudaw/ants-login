@@ -1,0 +1,174 @@
+*, ::before, ::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    width: 80rem;
+    margin: auto;
+    height: 100vh;
+    font-size: 1.3rem;
+    
+}
+
+
+#login_section h3 {
+    margin-top: 5rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+
+label {
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#login, #mdp {
+    background-color: #E8EDFF;
+    width: 35rem;
+    padding-left: 15px;
+    padding-bottom: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1rem;
+}
+
+#login:focus, #mdp:focus {
+   background-color: #E8EDFF;
+   outline: #0A76F6 2px solid;
+   outline-offset: 2px;
+}
+
+#forgot_id {
+    color: #000091;
+    border-bottom: 1px solid #000091;
+}
+
+#forgot_id:hover {
+    border-bottom: 2px solid #000091;;
+    text-decoration: none;
+}
+
+#show_pwd {
+    margin-left: 21.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#text_pwd {
+    cursor: pointer;
+    padding-left: 0.7rem;
+}
+
+#forgot_pwd {
+    color: #000091;
+    border-bottom: 1px solid #000091;
+}
+
+#forgot_pwd:hover {
+    border-bottom: 2px solid #000091;;
+    text-decoration: none;
+}
+
+#cancel {
+    width: 1.1rem;
+}
+
+.alert_login {
+    color: #DB4D00;
+    display: none;
+}
+
+.alert_pwd {
+    color: #DB4D00;
+    display: none;
+}
+
+#img_text {
+    background-color: #E8EDFF;
+    width: 35rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1.rem;
+    text-align: center;
+    color: #0063CB;
+    border-radius: 6px;
+}
+
+.img_text_to_display {
+    font-weight: bold;
+}
+
+#imgs_to_display button {
+    border: none;
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+ }
+
+#imgs_to_display img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+ #imgs_to_display button:hover {
+   background-color: #F6F6F6;
+  
+}
+
+#imgs_to_display button:focus {
+    outline: none;
+    border: 3px dotted #099A9F;
+    background-color: #E8EDFF;
+  
+ } 
+
+#imgs_to_display {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 72px;
+}
+
+#captcha_section {
+    text-align: center;
+    
+}
+.alert_captcha {
+    color: #DB4D00;
+    display: none; 
+    margin-top: 1.5rem;
+    width: 35rem;
+    text-align: center;
+}
+
+#connect {
+    margin-top: 1.5rem;
+    width: 35rem;
+    border: none;
+    color: white;
+    background-color: #000091;
+    padding: 0.5rem 0.5rem;
+    transition: .1s linear;
+}
+
+#connect:hover {
+    background-color: #1212FF;
+}
+
+#connect:focus {
+    outline: none;
+}
