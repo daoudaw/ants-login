@@ -15,7 +15,8 @@ body {
     margin: auto;
     height: 100vh;
     font-size: 1.3rem;
-    
+    color: rgb(0, 0, 0);  
+    background-color: #1f20211c;
 }
 
 
@@ -126,14 +127,12 @@ label {
 
  #imgs_to_display button:hover {
    background-color: #F6F6F6;
-  
 }
 
 #imgs_to_display button:focus {
     outline: none;
     border: 3px dotted #099A9F;
     background-color: #E8EDFF;
-  
  } 
 
 #imgs_to_display {
@@ -143,16 +142,14 @@ label {
     gap: 72px;
 }
 
-#captcha_section {
-    text-align: center;
-    
-}
+
 .alert_captcha {
     color: #DB4D00;
     display: none; 
     margin-top: 1.5rem;
     width: 35rem;
     text-align: center;
+
 }
 
 #connect {
