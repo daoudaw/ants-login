@@ -149,7 +149,6 @@ label {
     margin-top: 1.5rem;
     width: 35rem;
     text-align: center;
-
 }
 
 #connect {
@@ -168,4 +167,44 @@ label {
 
 #connect:focus {
     outline: none;
+}
+
+/*************************************************Media querries************************************************/
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        margin-left: 2rem;
+    }
+
+    #login_section h3 {
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+    }
+
+    #login, #mdp {
+        width: 25rem;
+    }
+
+    #show_pwd {
+        margin-left: 12.2rem;
+    }
+
+    #img_text {
+        width: 25rem;
+    }
+
+    #imgs_to_display {
+        gap: 32px;
+    }
+
+    .alert_captcha {
+        width: 25rem;
+    }
+    
+    #connect {
+        width: 25rem; 
+    }
+
+    
 }
