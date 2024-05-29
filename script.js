@@ -138,7 +138,7 @@ addEventListener('load', ()=> {
 
    });
 
-   //Modal
+   //modal
    openButton.addEventListener('click', () => {
     modal.showModal();
    });

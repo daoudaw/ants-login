@@ -11,8 +11,7 @@ html {
 
 body {
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-    width: 80rem;
-    margin: auto;
+    margin:0.3rem;
     height: 100vh;
     font-size: 1.3rem;
     color: rgb(0, 0, 0);  
@@ -215,7 +214,7 @@ label {
 @media only screen and (max-width: 768px) {
 
     body {
-        margin-left: 2rem;
+        margin: 0.3rem;
     }
 
     #login_section h3 {
