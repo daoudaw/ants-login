@@ -148,9 +148,11 @@ label {
 
 #imgs_to_display button:focus {
     outline: none;
+    border: 3px -webkit-dotted #099A9F;
     border: 3px dotted #099A9F;
     background-color: #E8EDFF;
  } 
+
 
 #imgs_to_display {
     margin-left: 1rem;
