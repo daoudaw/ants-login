@@ -226,10 +226,7 @@ label {
         width: 25rem;
     }
 
-    #imgs_to_display button:focus {
-        border: 3px dotted #099A9F !important;
-     } 
-
+  
     #show_pwd {
         margin-left: 6.1rem;
     }
