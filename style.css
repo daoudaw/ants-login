@@ -25,18 +25,20 @@ body {
     font-weight: 550;
     letter-spacing: 1px;
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 
 label {
     font-weight: 550;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #login, #mdp {
     background-color: #E8EDFF;
     width: 35rem;
     padding-left: 15px;
+    padding-top: 17px;
     padding-bottom: 2px;
     border-top: none;
     border-left: none;
@@ -44,6 +46,10 @@ label {
     border-color: black;
     border-radius: 5px 5px 0 0;
     margin-bottom: 1rem;
+}
+
+#login[placeholder], #mdp[placeholder] {
+    font-size: 1.2rem;
 }
 
 #login:focus, #mdp:focus {
@@ -55,6 +61,7 @@ label {
 #forgot_id {
     color: #000091;
     border-bottom: 1px solid #000091;
+    text-decoration: none;
 }
 
 #forgot_id:hover {
@@ -63,7 +70,7 @@ label {
 }
 
 #show_pwd {
-    margin-left: 21.5rem;
+    margin-left: 20.6rem;
     width: 1rem;
     height: 1rem;
     cursor: pointer;
@@ -78,6 +85,7 @@ label {
 #forgot_pwd {
     color: #000091;
     border-bottom: 1px solid #000091;
+    text-decoration: none;
 }
 
 #forgot_pwd:hover {
@@ -99,6 +107,15 @@ label {
     display: none;
 }
 
+
+#credentials_pwd {
+    margin-top: 2rem;
+}
+
+#img_verification {
+    margin-top: 2rem;
+}
+
 #img_text {
     background-color: #E8EDFF;
     width: 35rem;
@@ -107,6 +124,7 @@ label {
     text-align: center;
     color: #0063CB;
     border-radius: 6px;
+    margin-bottom: 1.1rem;
 }
 
 .img_text_to_display {
@@ -126,7 +144,7 @@ label {
 }
 
  #imgs_to_display button:hover {
-   background-color: #F6F6F6;
+   background-color: #E8EDFF;
 }
 
 #imgs_to_display button:focus {
@@ -159,6 +177,8 @@ label {
     background-color: #000091;
     padding: 0.5rem 0.5rem;
     transition: .1s linear;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 #connect:hover {
@@ -167,6 +187,27 @@ label {
 
 #connect:focus {
     outline: none;
+}
+
+.modal {
+    background-color: rgba(128, 128, 128, 0.487);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    translate: -225% 300%;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.modal button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+}
+
+.modal button:hover {
+    border: 1px solid red;
 }
 
 /*************************************************Media querries************************************************/
@@ -187,7 +228,7 @@ label {
     }
 
     #show_pwd {
-        margin-left: 12.2rem;
+        margin-left: 10.6rem;
     }
 
     #img_text {
@@ -204,7 +245,17 @@ label {
     
     #connect {
         width: 25rem; 
+        font-size: 1.3rem;
     }
 
+    .modal {
+        background-color: rgba(128, 128, 128, 0.487);
+        border-radius: 5px;
+        top: 50%;
+        left: 50%;
+        translate: -50% 300%;
+        padding: 0.5rem;
+        z-index: 10;
+    }
     
 }

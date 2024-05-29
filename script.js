@@ -31,6 +31,14 @@ const img3 = document.getElementById('img3');
 const img4 = document.getElementById('img4');
 const img5 = document.getElementById('img5');
 
+//button of connection
+const connect = document.getElementById("connect");
+
+//modal
+const openButton = document.querySelector("[data-open-modal]");
+const closeButton = document.querySelector("[data-close-modal]");
+const modal = document.querySelector('[data-modal]');
+
 //whe filling the login input
 login.addEventListener('input', ()=> {
     if(login.value !== '') {
@@ -99,7 +107,7 @@ addEventListener('load', ()=> {
     for (let i = randomSRC.length - 1; i >= 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [randomSRC[i], randomSRC[j]] = [randomSRC[j], randomSRC[i]];
-    
+ 
         img1.setAttribute('src', randomSRC[0]);
         img2.setAttribute('src', randomSRC[1]);
         img3.setAttribute('src', randomSRC[2]);
@@ -126,9 +134,17 @@ addEventListener('load', ()=> {
             });
         }
 
-    }    
+    }   
 
-    
-});
+   });
+
+   openButton.addEventListener('click', () => {
+    modal.showModal();
+   });
+
+   closeButton.addEventListener('click', () => {
+    modal.close();
+   })
+  
 
 

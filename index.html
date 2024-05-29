@@ -6,10 +6,10 @@
     <meta name="robots" content="index,follow" />
 
     <!-- Latest compiled and minified CSS -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
+    /> -->
 
 
     <!-- <link rel="stylesheet" href="./dist/output.css" />  -->
@@ -85,8 +85,14 @@
       <p class="alert_captcha"><img id="cancel" src="img/cancel.png"> Le Captcha est invalide</p>
 
       <p>
-        <button id="connect">Me connecter</button>
+        <button id="connect" data-open-modal>Me connecter</button>
       </p>
+
+      <dialog class="modal" data-modal>
+        <button data-close-modal>X</button>
+        <div>C'est juste un test 😉</div>
+      </dialog>
+
       
 
     </div>
