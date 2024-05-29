@@ -92,7 +92,7 @@ label {
     text-decoration: none;
 }
 
-#cancel {
+.cancel {
     width: 1.1rem;
 }
 
